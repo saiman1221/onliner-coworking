@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    const [messageText, setMessageText] = useState('')
+    const [messages, setMessages] = useState([])
+
+    const addMessage = (newMessage) => {
+        setMessages([...messages, `- ${newMessage}`]);
+        setMessageText('')
+    }
+
+    return (
+        <div className={'App'}>
+            <h2>Чат</h2>
+            {messages.length ? messages.map(el => <div className={'item'}>{el}</div>) : 'Упс'}
+            <br/>
+            <form action="">
+                <input type="text" value={messageText} onChange={(e) => setMessageText(e.target.value)}/>
+                <button type={'submit'} onClick={(e) => {
+                    e.preventDefault();
+                    addMessage(messageText)
+                }}>Отправить</button>
+            </form>
+        </div>
+    );
 }
-
-export default App;
