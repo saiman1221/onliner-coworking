@@ -1,0 +1,41 @@
+.FirstScreen {
+  width: 100%;
+  position: relative;
+
+  .background_image {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    .content{
+      position: relative;
+
+      h1 {
+        width: 80%;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+        color: #FFFFFF;
+      }
+
+      .ui-border{
+        width: calc(100% + 56px);
+        height: 830px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-28px) translateY(-28px);
+        background-color: transparent;
+        border: 28px solid rgba(109, 118, 106, 0.8);
+        z-index: -1;
+      }
+    }
+  }
+}
