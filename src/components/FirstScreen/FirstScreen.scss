@@ -1,5 +1,6 @@
 .FirstScreen {
   width: 100%;
+  margin-bottom: 130px;
   position: relative;
 
   .background_image {
@@ -26,12 +27,12 @@
       }
 
       .ui-border{
-        width: calc(100% + 56px);
+        width: calc(100% + 100px);
         height: 830px;
         position: absolute;
         top: 0;
         left: 0;
-        transform: translateX(-28px) translateY(-28px);
+        transform: translateX(-50px) translateY(-10%);
         background-color: transparent;
         border: 28px solid rgba(109, 118, 106, 0.8);
         z-index: -1;

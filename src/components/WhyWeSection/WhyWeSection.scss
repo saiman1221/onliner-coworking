@@ -1,3 +1,53 @@
 .WhyWeSection{
 
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-left, &-right {
+      width: 50%;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-left{
+      img{
+        width: 100%;
+      }
+    }
+
+    &-right{
+
+
+      .title{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 30px;
+      }
+
+      .text{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        margin-bottom: 50px;
+      }
+
+      .item-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
 }
+
