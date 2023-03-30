@@ -1,6 +1,9 @@
 import React from 'react';
-import './WhyWeSection.scss';
-import image from '../../assets/why_we_section/photo.png';
+import '../styles/WhyWeSection.scss';
+import image from '../assets/why_we_section/photo.png';
+import uiEl from '../assets/why_we_section/ui-element.svg'
+
+import {WhyWeSectionItem} from "./WhyWeSectionItem";
 
 const itemsListInfo = [
     '3 коворкинга, 26 рабочих мест с лучшими условиями',
@@ -8,16 +11,12 @@ const itemsListInfo = [
     '4 вида зон для работы мастеров разных направлений'
 ]
 
-const ItemOfList = (props) => {
-    return(
-        <div className={'item'}>
-            dwad
-        </div>
-    )
-}
-
 const renderItemsList = () => {
-    return itemsListInfo.map((el, id) => <ItemOfList itemContent={el} imageUrl={`../../assets/why_we_section/image${id}`}/>)
+    return itemsListInfo.map((el, id) => <WhyWeSectionItem
+        itemContent={el}
+        imageUrl={id + 1}
+        key={Date.now() + id * el.length}
+    />)
 }
 
 export const WhyWeSection = () => {
@@ -29,12 +28,14 @@ export const WhyWeSection = () => {
                 </div>
                 <div className={'content-right'}>
                     <h2 className={'title'}>Почему мы?</h2>
-                    <p className={'text'}>Главное преимущество франшизы — партнером может стать абсолютно любой человек, даже не имеющий опыта работы в бьюти индустрии.</p>
+                    <p className={'text'}>Главное преимущество франшизы — партнером может стать абсолютно любой человек,
+                        даже не имеющий опыта работы в бьюти индустрии.</p>
                     <div className={'items-list'}>
                         {renderItemsList()}
                     </div>
                 </div>
             </div>
+            <img src={uiEl} alt="UI-элемент" className={'ui-element'}/>
         </div>
     );
 };

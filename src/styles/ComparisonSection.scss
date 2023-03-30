@@ -1,0 +1,13 @@
+.ComparisonSection {
+  background-image: url("../assets/comparison_section/backgroundImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 0;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}

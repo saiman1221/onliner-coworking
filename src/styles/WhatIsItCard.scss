@@ -1,0 +1,44 @@
+.WhatIsItCard{
+  width: 48%;
+  border: 1px solid #A1A7A0;
+  padding: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+
+    h3{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 32px;
+      color: #000000;
+      text-align: center;
+      background-color: #fff;
+      padding: 0 15px;
+      text-transform: none;
+    }
+  }
+
+  .text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+
+  }
+}

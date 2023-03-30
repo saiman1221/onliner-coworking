@@ -1,0 +1,18 @@
+.WhyWeSectionItem{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 35px 30px;
+  border: 1px solid #E9D4C6;
+  background-color: #fff;
+
+  p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+  }
+}

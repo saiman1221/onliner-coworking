@@ -1,6 +1,6 @@
 import React from 'react';
-import './FirstScreen.scss';
-import background_image from '../../assets/first_screen/background_image.png';
+import '../styles/FirstScreen.scss';
+import background_image from '../assets/first_screen/background_image.png';
 
 export const FirstScreen = () => {
     return (

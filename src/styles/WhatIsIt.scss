@@ -1,0 +1,31 @@
+.WhatIsIt{
+  padding-bottom: 70px;
+  position: relative;
+  margin-bottom: 70px;
+
+  .title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 55px;
+  }
+
+  .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4%;
+    row-gap: 50px;
+  }
+
+  .ui-element{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
