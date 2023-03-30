@@ -1,0 +1,35 @@
+.PlusesOfWorking {
+  margin-top: 60px;
+  padding: 60px 0;
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #666666;
+    margin-bottom: 100px;
+    width: 50%;
+  }
+
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+
+
+  }
+}

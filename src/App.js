@@ -6,6 +6,7 @@ import {WhyWeSection} from "./components/WhyWeSection";
 import {WhatIsIt} from "./components/WhatIsIt";
 import {AboutSkills} from "./components/AboutSkills";
 import {ComparisonSection} from "./components/ComparisonSection";
+import {PlusesOfWorking} from "./components/PlusesOfWorking";
 
 export const App = () => {
     return (
@@ -16,6 +17,7 @@ export const App = () => {
             <WhatIsIt/>
             <AboutSkills/>
             <ComparisonSection/>
+            <PlusesOfWorking/>
         </div>
     );
 }
