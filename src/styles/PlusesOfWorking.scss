@@ -1,6 +1,7 @@
 .PlusesOfWorking {
-  margin-top: 60px;
+  margin: 60px 0;
   padding: 60px 0;
+  position: relative;
 
   .title {
     font-family: 'Montserrat', sans-serif;
@@ -29,7 +30,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+  }
 
+  .ui-element:first-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
+  .ui-element:last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
