@@ -1,0 +1,29 @@
+.Rates {
+  margin-bottom: 100px;
+
+  .title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  .link{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.9%;
+    color: #000000;
+
+    img{
+      display: inline;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+}

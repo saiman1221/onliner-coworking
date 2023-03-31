@@ -1,0 +1,41 @@
+.Calculation {
+  margin-bottom: 150px;
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+
+    .card {
+      width: 100%;
+      border: 1px solid #A1A7A0;
+      padding: 20px 40px;
+
+      ul {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        list-style: inside;
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

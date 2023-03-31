@@ -1,0 +1,44 @@
+.Reviews {
+  margin-bottom: 130px;
+
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 139.9%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 55px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+    .right-part{
+      width: 60%;
+
+      .part-title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 139.9%;
+        text-transform: capitalize;
+        color: #000000;
+        margin-bottom: 18px;
+      }
+
+      .part-text{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 139.9%;
+        color: #000000;
+      }
+    }
+  }
+}
