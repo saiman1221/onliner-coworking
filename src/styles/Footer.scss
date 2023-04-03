@@ -2,5 +2,96 @@
   background: #A1A7A0;
   padding: 20px 0 80px 0;
 
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
+    .left {
+      .logo-image {
+        margin-bottom: 35px;
+      }
+
+      .title {
+        margin-bottom: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 139.9%;
+        text-transform: capitalize;
+        color: #070707;
+      }
+
+      .text {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 139.9%;
+        color: #000000;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .list-title{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 139.9%;
+          color: #000000;
+          margin-bottom: 18px;
+        }
+
+        .list-item, .list-item a{
+          display: flex;
+          align-items: flex-end;
+          gap: 10px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 139.9%;
+          color: #000000;
+          text-transform: none;
+          list-style: none;
+          text-decoration: none;
+
+        }
+
+        .list-item:before{
+          display: flex;
+          align-items: center;
+          content: '';
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .list:first-child{
+        .list-item:nth-child(2):before{
+          background-image: url("../assets/footer/phone.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .list:last-child{
+        .list-item:nth-child(2):before{
+          background-image: url("../assets/footer/location.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
 }
